@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "batchId": "3f2c9a1e-32ac-4d2f-b4da-9af4b3c6e111",
+    "source": "test"
+  },
+  "receipts": [
+    {
+      "receiptId": "11111111-aaaa-4bbb-8ccc-000000000001",
+      "source": {
+        "channel": "import",
+        "imagePath": "app://receipts/fis1.jpg",
+        "ocrEngine": "MLKit",
+        "deviceTime": "2023-05-18T11:58:00+03:00"
+      },
+      "header": {
+        "vendorName": "A101 YENI MAGAZACILIK A.S.",
+        "vendorTaxNo": "9480423762",
+        "branchCode": "G784",
+        "taxOffice": "USKUDAR",
+        "date": "2023-05-18",
+        "time": "11:58",
+        "docNo": "0022",
+        "eArchive": true,
+        "currency": "TRY"
+      },
+      "items": [
+        { "lineNo": 1, "materialText": "POGACA / ACMA 80G", "qty": 1, "uom": "EA", "gross": 20.95, "discount": 0, "vatRate": 1, "net": 20.95 },
+        { "lineNo": 2, "materialText": "BISKVIT 3x110G", "qty": 1, "uom": "EA", "gross": 22.50, "discount": 0, "vatRate": 1, "net": 22.50 },
+        { "lineNo": 3, "materialText": "SALATALIK", "qty": 1, "uom": "EA", "gross": 22.87, "discount": 0, "vatRate": 1, "net": 22.87 }
+      ],
+      "totals": {
+        "subtotal": 728.37,
+        "vatSummary": [
+          { "rate": 1, "base": 728.37, "vat": 7.21 },
+          { "rate": 10, "base": 27.50, "vat": 2.04 },
+          { "rate": 18, "base": 0.50, "vat": 0.08 }
+        ],
+        "grandTotal": 756.37,
+        "payment": { "type": "CARD", "posRef": "881211" }
+      },
+      "sap": {
+        "target": "FB60",
+        "companyCode": "100",
+        "purchaseOrderRef": null,
+        "mappingProfile": "TR_RETAIL_V1"
+      },
+      "audit": {
+        "submittedBy": { "userId": "u-001", "name": "Deneme Kullanıcısı", "email": "user@example.com" },
+        "submittedAt": "2025-10-17T12:00:00+03:00",
+        "clientMeta": { "appVersion": "1.0.0", "deviceId": "dev-abc" }
+      },
+      "status": "validated"
+    },
+    {
+      "receiptId": "11111111-aaaa-4bbb-8ccc-000000000002",
+      "source": { "channel": "import", "imagePath": "app://receipts/fis2.jpg", "ocrEngine": "MLKit", "deviceTime": "2021-07-28T17:58:00+03:00" },
+      "header": {
+        "vendorName": "A101 YENI MAGAZACILIK A.S.",
+        "vendorTaxNo": "9480423762",
+        "branchCode": "D246",
+        "taxOffice": "USKUDAR",
+        "date": "2021-07-28",
+        "time": "17:58",
+        "docNo": "0123",
+        "eArchive": true,
+        "currency": "TRY"
+      },
+      "items": [
+        { "lineNo": 1, "materialText": "MENTOR CIFTI BICI OLU", "qty": 1, "uom": "EA", "gross": 9.95, "discount": 0, "vatRate": 18, "net": 9.95 },
+        { "lineNo": 2, "materialText": "ALTINKILIC 1L KEFIR", "qty": 1, "uom": "EA", "gross": 7.95, "discount": 0, "vatRate": 8, "net": 7.95 }
+      ],
+      "totals": {
+        "subtotal": 71.40,
+        "vatSummary": [
+          { "rate": 8, "base": 44.30, "vat": 3.54 },
+          { "rate": 18, "base": 27.10, "vat": 4.88 }
+        ],
+        "grandTotal": 115.70,
+        "payment": { "type": "CASH", "posRef": null }
+      },
+      "sap": { "target": "FB60", "companyCode": "100", "purchaseOrderRef": null, "mappingProfile": "TR_RETAIL_V1" },
+      "audit": {
+        "submittedBy": { "userId": "u-002", "name": "Test Kullanıcısı", "email": "test@example.com" },
+        "submittedAt": "2025-10-17T12:05:00+03:00",
+        "clientMeta": { "appVersion": "1.0.0", "deviceId": "dev-xyz" }
+      },
+      "status": "validated"
+    },
+    
+    {
+      "receiptId": "11111111-aaaa-4bbb-8ccc-000000000003",
+      "source": { "channel": "import", "imagePath": "app://receipts/fis3.jpg", "ocrEngine": "Tesseract", "deviceTime": "2023-05-18T12:05:00+03:00" },
+      "header": {
+        "vendorName": "A101 YENI MAGAZACILIK A.S.",
+        "vendorTaxNo": "9480423762",
+        "branchCode": "G784",
+        "taxOffice": "USKUDAR",
+        "date": "2023-05-18",
+        "time": "12:05",
+        "docNo": "0024",
+        "eArchive": true,
+        "currency": "TRY"
+      },
+      "items": [
+        { "lineNo": 1, "materialText": "MONSTER ULTRA 500ML", "qty": 1, "uom": "EA", "gross": 27.50, "discount": 0, "vatRate": 10, "net": 27.50 },
+        { "lineNo": 2, "materialText": "DOMATES KOKTEYL", "qty": 1, "uom": "EA", "gross": 17.90, "discount": 0, "vatRate": 1, "net": 17.90 }
+      ],
+      "totals": {
+        "subtotal": 45.40,
+        "vatSummary": [
+          { "rate": 10, "base": 27.50, "vat": 2.04 },
+          { "rate": 1, "base": 17.90, "vat": 0.18 }
+        ],
+        "grandTotal": 47.62,
+        "payment": { "type": "CARD", "posRef": "991122" }
+      },
+      "sap": { "target": "FB60", "companyCode": "100", "purchaseOrderRef": null, "mappingProfile": "TR_RETAIL_V1" },
+      "audit": {
+        "submittedBy": { "userId": "u-001", "name": "Deneme Kullanıcısı", "email": "user@example.com" },
+        "submittedAt": "2025-10-17T12:10:00+03:00",
+        "clientMeta": { "appVersion": "1.0.0", "deviceId": "dev-abc" }
+      },
+      "status": "validated"
+    }
+  ]
+}

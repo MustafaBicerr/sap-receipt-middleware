@@ -1,0 +1,3 @@
+{"level":"info","message":{"batchId":"3f2c9a1e-32ac-4d2f-b4da-9af4b3c6e111","count":3,"type":"INBOUND"}}
+{"level":"info","message":{"batchId":"3f2c9a1e-32ac-4d2f-b4da-9af4b3c6e111","count":3,"type":"INBOUND"}}
+{"level":"info","message":{"batchId":"3f2c9a1e-32ac-4d2f-b4da-9af4b3c6e111","result":{"count":3,"results":[{"receiptId":"11111111-aaaa-4bbb-8ccc-000000000001","result":{"messages":[],"mode":"DRY_RUN","sapDocument":"SIM-2ac5e07e","target":"FB60"}},{"receiptId":"11111111-aaaa-4bbb-8ccc-000000000002","result":{"messages":[],"mode":"DRY_RUN","sapDocument":"SIM-1d8b9a4b","target":"FB60"}},{"receiptId":"11111111-aaaa-4bbb-8ccc-000000000003","result":{"messages":[],"mode":"DRY_RUN","sapDocument":"SIM-958a80ba","target":"FB60"}}],"status":"DONE"},"type":"RESULT"}}
