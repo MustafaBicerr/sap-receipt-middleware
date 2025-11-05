@@ -15,6 +15,11 @@ app.use(requestLogger);
 app.use('/api/health', healthRoutes);
 app.use('/api/receipts', receiptRoutes);
 
+// src/index.js veya src/app.js içinde, route tanımlamalarından sonra ekle:
+app.get('/health', (req, res) => {
+  res.status(200).json({ status: 'UP', timestamp: new Date().toISOString() });
+});
+
 // error handler en sonda
 app.use(errorHandler);
 
