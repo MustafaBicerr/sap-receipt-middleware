@@ -4,9 +4,33 @@ import { fileURLToPath } from 'url';
 import { validateBatch } from '../services/validation.service.js';
 import { postBatchToSap } from '../services/sap.service.js';
 import { logInbound, logResult } from '../services/log.service.js';
+import { getMetadata } from "../adapters/sapOdata.adapter.js";
+
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
+export async function sapMetadata(req, res) {
+  try {
+    const r = await getMetadata();
+    return res.status(r.status).send(r.data);
+  } catch (err) {
+    console.error("sapMetadata error:", err.response?.status, err.response?.data || err.message);
+    return res.status(500).json({ error: String(err.message), detail: err.response?.data });
+  }
+}
+
+export async function createInvoice(req, res) {
+  try {
+    const body = req.body; // örn: { ... }
+    const r = await fetchCsrfAndPost("InvoiceHeaderSet", body);
+    return res.status(r.status).json(r.data);
+  } catch (err) {
+    console.error("createInvoice error:", err.response?.status, err.response?.data || err.message);
+    return res.status(500).json({ error: String(err.message), detail: err.response?.data });
+  }
+}
+
 
 export async function postFromSample(req, res, next) {
   try {
